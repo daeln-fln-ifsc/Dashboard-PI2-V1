@@ -41,7 +41,7 @@ services:
       context: .
       dockerfile: Containerfile.frontend
       args:
-        - VITE_API_URL=https://api.aguasvivas.com.br
+        - VITE_API_URL=https://api.aguasvivas.eco.br
     container_name: hydra_frontend
     restart: always
     ports:

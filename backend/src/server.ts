@@ -16,8 +16,8 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  "https://aguasvivas.com.br",
-  "https://www.aguasvivas.com.br"
+  "https://aguasvivas.eco.br",
+  "https://www.aguasvivas.eco.br"
 ];
 
 app.use(cors({

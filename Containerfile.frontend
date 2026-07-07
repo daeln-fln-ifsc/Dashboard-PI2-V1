@@ -5,7 +5,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Argumento para a URL da API (passado no build ou env)
-ARG VITE_API_URL=https://api.aguasvivas.com.br
+ARG VITE_API_URL=https://api.aguasvivas.eco.br
 ENV VITE_API_URL=$VITE_API_URL
 
 COPY package*.json ./
