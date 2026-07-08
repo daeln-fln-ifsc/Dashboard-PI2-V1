@@ -8,10 +8,6 @@ dist/
 .env
 *.local
 
-# Prisma artifacts
-/prisma/migrations/
-/src/generated/
-
 # System files
 .DS_Store
 Thumbs.db
