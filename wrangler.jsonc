@@ -1,0 +1,18 @@
+
+  {
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "dashboard-pi2-v1",
+    "compatibility_date": "2026-07-08",
+    "observability": {
+      "enabled": true
+    },
+    "assets": {
+      "not_found_handling": "single-page-application",
+      "directory": "./dist"
+    },
+    "compatibility_flags": [
+      "nodejs_compat"
+    ],
+    "workers_dev": false,
+    "preview_urls": false
+  }
