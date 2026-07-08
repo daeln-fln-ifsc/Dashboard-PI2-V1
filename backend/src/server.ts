@@ -55,13 +55,9 @@ app.use("/api", apiRoutes);
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 
-// Serve the frontend static files
-const frontendPath = path.join(__dirname, "../../dist");
-app.use(express.static(frontendPath));
-
 app.use((req, res, next) => {
   if (req.method === 'GET' && !req.path.startsWith('/api')) {
-    res.sendFile(path.join(frontendPath, "index.html"));
+    res.redirect("https://aguasvivas.eco.br");
   } else {
     next();
   }
