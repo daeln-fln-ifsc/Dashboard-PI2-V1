@@ -15,4 +15,4 @@ Qualquer alteração deve ser discutida entre as equipes.
 Separador: `;` (ponto e vírgula)
 
 ```csv
-Timestamp;Temp_Ar;Umid_Ar;Pressao;Indice_UV;Chuva_Acum;Vento_Vel;Vento_Dir;Temp_Agua;pH_Agua;Condutiv_EC;Turbidez
+timestamp;tempAr;umidAr;pressao;indiceUV;chuvaAcum;ventoVel;ventoDir;tempAgua;phAgua;condutivEC;turbidez
