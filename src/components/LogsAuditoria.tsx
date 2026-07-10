@@ -19,7 +19,7 @@ export function LogsAuditoria() {
 
   async function carregarLogs() {
     try {
-      const resposta = await fetch(`${API_URL}/audit`, {
+      const resposta = await fetch(`${API_URL}/api/audit`, {
         headers: {
           Authorization: `Bearer ${obterToken()}`,
         },

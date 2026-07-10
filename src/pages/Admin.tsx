@@ -238,7 +238,7 @@ export function Admin({
 
   async function salvarBoiaBackend(boia: BoiaConfig) {
     try {
-      const resposta = await fetch(`${API_URL}/boias`, {
+      const resposta = await fetch(`${API_URL}/api/boias`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -261,7 +261,7 @@ export function Admin({
 
   async function atualizarBoiaBackend(boia: BoiaConfig) {
     try {
-      const resposta = await fetch(`${API_URL}/boias/${boia.id}`, {
+      const resposta = await fetch(`${API_URL}/api/boias/${boia.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -284,7 +284,7 @@ export function Admin({
 
   async function excluirBoiaBackend(id: string) {
     try {
-      const resposta = await fetch(`${API_URL}/boias/${id}`, {
+      const resposta = await fetch(`${API_URL}/api/boias/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${obterToken()}`,
@@ -408,7 +408,7 @@ export function Admin({
 
   const limparAlerta = async (id: string) => {
     try {
-      const resposta = await fetch(`${API_URL}/boias/${id}/acknowledge`, {
+      const resposta = await fetch(`${API_URL}/api/boias/${id}/acknowledge`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${obterToken()}`,
